@@ -1,4 +1,82 @@
 -------------------------------------------------------------------------------
 Test set: hellocucumber.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.404 sec
+Tests run: 18, Failures: 4, Errors: 6, Skipped: 0, Time elapsed: 275.869 sec <<< FAILURE! - in hellocucumber.RunCucumberTest
+Check W3 bad page has no broken links #1(All links ok?)  Time elapsed: 12.508 sec  <<< FAILURE!
+java.lang.AssertionError: Status code returned: 404
+
+Check W3 bad page has no broken links #2(All links ok?)  Time elapsed: 11.114 sec  <<< FAILURE!
+java.lang.AssertionError: Status code returned: 404
+
+Check W3 bad page loading raises no errors in console #1(No console errors?)  Time elapsed: 4.909 sec  <<< FAILURE!
+java.lang.AssertionError: Message in console:https://www.w3.org/standards/badpage - Failed to load resource: the server responded with a status of 404 ()
+
+Check W3 bad page loading raises no errors in console #2(No console errors?)  Time elapsed: 5.442 sec  <<< ERROR!
+org.openqa.selenium.UnsupportedCommandException: 
+HTTP method not allowed
+Command duration or timeout: 4 milliseconds
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'Micheles-MBP', ip: 'fe80:0:0:0:c87:52f3:b1a6:2160%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d2464401-00c8-2041-972b-234e4b6d8b3f, getLog {type=browser}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:debuggerAddress: localhost:3596, moz:geckodriverVersion: 0.30.0, moz:headless: true, moz:processID: 7685, moz:profile: /var/folders/56/ypk50hpn4cl..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.6.0, proxy: Proxy(), se:cdp: ws://localhost:3596/devtool..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d2464401-00c8-2041-972b-234e4b6d8b3f
+
+Check W3 multimodal page loading raises no errors in console #2(No console errors?)  Time elapsed: 6.083 sec  <<< ERROR!
+org.openqa.selenium.UnsupportedCommandException: 
+HTTP method not allowed
+Command duration or timeout: 2 milliseconds
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'Micheles-MBP', ip: 'fe80:0:0:0:c87:52f3:b1a6:2160%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f4be55ce-9b8e-9146-84d4-c11a4935111f, getLog {type=browser}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:debuggerAddress: localhost:46657, moz:geckodriverVersion: 0.30.0, moz:headless: true, moz:processID: 7693, moz:profile: /var/folders/56/ypk50hpn4cl..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.6.0, proxy: Proxy(), se:cdp: ws://localhost:46657/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f4be55ce-9b8e-9146-84d4-c11a4935111f
+
+Check W3 htmlcss page loading raises no errors in console #2(No console errors?)  Time elapsed: 6.116 sec  <<< ERROR!
+org.openqa.selenium.UnsupportedCommandException: 
+HTTP method not allowed
+Command duration or timeout: 1 milliseconds
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'Micheles-MBP', ip: 'fe80:0:0:0:c87:52f3:b1a6:2160%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5fac7cd4-390e-604b-823e-a26a0158a682, getLog {type=browser}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:debuggerAddress: localhost:2395, moz:geckodriverVersion: 0.30.0, moz:headless: true, moz:processID: 7701, moz:profile: /var/folders/56/ypk50hpn4cl..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.6.0, proxy: Proxy(), se:cdp: ws://localhost:2395/devtool..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5fac7cd4-390e-604b-823e-a26a0158a682
+
+Check W3 bad page loading raises no errors in console #1(Response code?)  Time elapsed: 4.889 sec  <<< FAILURE!
+java.lang.AssertionError: Message in console:https://www.w3.org/standards/badpage - Failed to load resource: the server responded with a status of 404 ()
+
+Check W3 bad page loading raises no errors in console #2(Response code?)  Time elapsed: 6.09 sec  <<< ERROR!
+org.openqa.selenium.UnsupportedCommandException: 
+HTTP method not allowed
+Command duration or timeout: 1 milliseconds
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'Micheles-MBP', ip: 'fe80:0:0:0:c87:52f3:b1a6:2160%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ffa57435-4e2a-cf4e-9458-37dc348615bc, getLog {type=browser}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:debuggerAddress: localhost:11546, moz:geckodriverVersion: 0.30.0, moz:headless: true, moz:processID: 7756, moz:profile: /var/folders/56/ypk50hpn4cl..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.6.0, proxy: Proxy(), se:cdp: ws://localhost:11546/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ffa57435-4e2a-cf4e-9458-37dc348615bc
+
+Check W3 multimodal page loading raises no errors in console #2(Response code?)  Time elapsed: 6.292 sec  <<< ERROR!
+org.openqa.selenium.UnsupportedCommandException: 
+HTTP method not allowed
+Command duration or timeout: 2 milliseconds
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'Micheles-MBP', ip: 'fe80:0:0:0:c87:52f3:b1a6:2160%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [3c165075-5164-1a4b-b3a5-49054951d70e, getLog {type=browser}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:debuggerAddress: localhost:1315, moz:geckodriverVersion: 0.30.0, moz:headless: true, moz:processID: 7764, moz:profile: /var/folders/56/ypk50hpn4cl..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.6.0, proxy: Proxy(), se:cdp: ws://localhost:1315/devtool..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3c165075-5164-1a4b-b3a5-49054951d70e
+
+Check W3 htmlcss page loading raises no errors in console #2(Response code?)  Time elapsed: 5.179 sec  <<< ERROR!
+org.openqa.selenium.UnsupportedCommandException: 
+HTTP method not allowed
+Command duration or timeout: 1 milliseconds
+Build info: version: '4.0.0-rc-2', revision: '8d1e4aa5ae'
+System info: host: 'Micheles-MBP', ip: 'fe80:0:0:0:c87:52f3:b1a6:2160%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [487fa17e-43da-8740-b8e6-84cad9e456fb, getLog {type=browser}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:debuggerAddress: localhost:16645, moz:geckodriverVersion: 0.30.0, moz:headless: true, moz:processID: 7772, moz:profile: /var/folders/56/ypk50hpn4cl..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.6.0, proxy: Proxy(), se:cdp: ws://localhost:16645/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 487fa17e-43da-8740-b8e6-84cad9e456fb
+
